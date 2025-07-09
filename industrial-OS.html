@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全球工业级操作系统全景图 v2.0</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      padding: 2em;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2em;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 0.75em;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    .region-header {
+      background-color: #f9f9f9;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌍 全球工业级操作系统全景图（按地区整理 v2.0）</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>地区 / Region</th>
+        <th>国家 / Country</th>
+        <th>系统名称 / OS Name</th>
+        <th>厂商 / Developer</th>
+        <th>类型 / Type</th>
+        <th>应用方向 / Application</th>
+        <th>备注 / Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="region-header"><td colspan="7">北美 North America</td></tr>
+      <tr><td>北美</td><td>美国</td><td>VxWorks</td><td>Wind River</td><td>RTOS</td><td>航天、军事、工业控制</td><td>DO-178C、火星探测器</td></tr>
+      <tr><td>北美</td><td>美国</td><td>INTEGRITY</td><td>Green Hills</td><td>安全 RTOS</td><td>军工、航空、医疗</td><td>EAL6+ 认证</td></tr>
+      <tr><td>北美</td><td>加拿大</td><td>QNX Neutrino</td><td>BlackBerry</td><td>微内核 RTOS</td><td>车载、电力、医疗</td><td>POSIX 支持，车规系统核心</td></tr>
+
+      <tr class="region-header"><td colspan="7">欧洲 Europe</td></tr>
+      <tr><td>欧洲</td><td>德国</td><td>AUTOSAR OS</td><td>Industry Consortium</td><td>汽车 RTOS</td><td>ECU、ADAS</td><td>国际车规标准</td></tr>
+      <tr><td>欧洲</td><td>波兰</td><td>Phoenix-RTOS</td><td>Phoenix Systems</td><td>RTOS</td><td>能源设备、嵌入式</td><td>POSIX 兼容，开源</td></tr>
+      <tr><td>欧洲</td><td>芬兰</td><td>Mbed OS</td><td>ARM</td><td>IoT RTOS</td><td>MCU 控制器、智能设备</td><td>开源，ARM 生态</td></tr>
+
+      <tr class="region-header"><td colspan="7">日本 Japan</td></tr>
+      <tr><td>日本</td><td>日本</td><td>μITRON</td><td>TRON Forum</td><td>RTOS</td><td>家电、车载、嵌入式控制</td><td>全球嵌入式出货量大</td></tr>
+      <tr><td>日本</td><td>日本</td><td>T-Kernel</td><td>TRON Project</td><td>RTOS</td><td>工控网关、智能设备</td><td>模块化设计</td></tr>
+
+      <tr class="region-header"><td colspan="7">中国 China</td></tr>
+      <tr><td>中国</td><td>中国</td><td>SylixOS</td><td>翼辉信息</td><td>工业 RTOS</td><td>航天、船舶、电力</td><td>自主可控、支持 POSIX</td></tr>
+      <tr><td>中国</td><td>中国</td><td>RT-Thread</td><td>社区驱动</td><td>轻量 RTOS</td><td>IoT、工业模块</td><td>开源活跃</td></tr>
+      <tr><td>中国</td><td>中国</td><td>HarmonyOS Lite</td><td>华为</td><td>分布式 RTOS</td><td>IoT、边缘计算</td><td>可裁剪，轻量级</td></tr>
+
+      <tr class="region-header"><td colspan="7">印度 India</td></tr>
+      <tr><td>亚洲</td><td>印度</td><td>BharOS</td><td>IIT Madras</td><td>安全系统</td><td>政府通信设备</td><td>Android 替代方案</td></tr>
+      <tr><td>亚洲</td><td>印度</td><td>AakashRTOS</td><td>教育项目</td><td>RTOS（实验）</td><td>教学/实验设备</td><td>尚未产业化</td></tr>
+
+      <tr class="region-header"><td colspan="7">俄罗斯 Russia</td></tr>
+      <tr><td>欧洲</td><td>俄罗斯</td><td>Elbrus OS</td><td>MCST</td><td>安全工业系统</td><td>军工设备</td><td>与 Elbrus CPU 配套</td></tr>
+      <tr><td>欧洲</td><td>俄罗斯</td><td>Real-Time OS</td><td>军事研究所</td><td>RTOS</td><td>武器控制系统</td><td>封闭部署，国家军工用途</td></tr>
+
+      <tr class="region-header"><td colspan="7">韩国 Korea</td></tr>
+      <tr><td>亚洲</td><td>韩国</td><td>Tizen RT</td><td>Samsung</td><td>RTOS</td><td>智能家电、车载设备</td><td>轻量嵌入式系统</td></tr>
+
+      <tr class="region-header"><td colspan="7">东南亚与其他 Southeast Asia & Others</td></tr>
+      <tr><td>亚洲</td><td>新加坡/越南</td><td>FreeRTOS / LinuxRT</td><td>集成部署</td><td>开源 RTOS</td><td>工业控制、城市系统</td><td>主要依赖进口系统</td></tr>
+      <tr><td>拉美</td><td>巴西</td><td>Yocto + PREEMPT_RT</td><td>开源社区</td><td>工业 Linux</td><td>能源、自动化工厂</td><td>集成使用为主</td></tr>
+      <tr><td>中东/非洲</td><td>阿联酋、南非等</td><td>QNX / VxWorks</td><td>国际厂商</td><td>商用 RTOS</td><td>石油、能源、国防</td><td>进口部署方案</td></tr>
+    </tbody>
+  </table>
+<h2>术语解释 / Glossary</h2>
+  <ul>
+    <li><strong>RTOS（实时操作系统）</strong>：Real-Time Operating System，用于对响应速度有严格要求的控制系统，如嵌入式设备、工业控制器等。</li>
+    <li><strong>DO-178C</strong>：航空电子软件开发的安全认证标准，常用于航天和飞控系统软件。</li>
+    <li><strong>EAL6+</strong>：Evaluation Assurance Level 6+，信息安全等级中的高级别，代表极高的安全认证要求，常用于军工系统。</li>
+    <li><strong>POSIX</strong>：Portable Operating System Interface，操作系统兼容标准，支持跨平台编程。</li>
+    <li><strong>ECU</strong>：Electronic Control Unit，汽车中的电子控制单元，例如发动机控制、制动控制等。</li>
+    <li><strong>ADAS</strong>：Advanced Driver Assistance Systems，驾驶辅助系统，如自动刹车、车道保持等。</li>
+    <li><strong>MCU</strong>：Microcontroller Unit，微控制器，用于简单计算和控制任务的嵌入式芯片。</li>
+    <li><strong>Elbrus CPU</strong>：俄罗斯自主研发的高安全处理器，配套使用 Elbrus OS。</li>
+  </ul>
+</body>
+</html>

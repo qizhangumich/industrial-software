@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>实验室管理软件</title>
+  <style>
+    :root {
+      --primary-green: #0a6640;
+      --header-bg: #e3f1ea;
+      --row-alt-bg: #f5f8fa;
+      --font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h2 {
+      color: var(--primary-green);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+
+    thead {
+      background-color: var(--header-bg);
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 16px;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--primary-green);
+      font-weight: 600;
+      border-bottom: 2px solid #ccc;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: var(--row-alt-bg);
+    }
+  </style>
+</head>
+<body>
+
+<h2>🧪 实验室管理软件六大类 — 公司、国家与特点</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>类别</th>
+      <th>公司</th>
+      <th>所在国家</th>
+      <th>公司特点与介绍</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">1. 实验室信息管理系统（LIMS）</td>
+      <td>LabWare</td>
+      <td>美国</td>
+      <td>全球领先，适用于多行业，可高度定制化</td>
+    </tr>
+    <tr>
+      <td>Thermo Fisher SampleManager</td>
+      <td>美国</td>
+      <td>集成ELN、SDMS，适配自动化仪器，合规性强</td>
+    </tr>
+    <tr>
+      <td>STARLIMS（Abbott）</td>
+      <td>美国</td>
+      <td>医疗与司法领域广泛应用，界面现代</td>
+    </tr>
+    <tr>
+      <td>LabVantage</td>
+      <td>美国</td>
+      <td>灵活部署，支持云与物联网集成</td>
+    </tr>
+    <tr>
+      <td>Agilent SLIMS</td>
+      <td>美国</td>
+      <td>集成仪器与流程分析，适用于分析实验室</td>
+    </tr>
+    <tr>
+      <td>Integle（鹰谷科技）</td>
+      <td>中国</td>
+      <td>聚焦研发型实验室，支持定制化部署，服务新材料、制药、化工企业</td>
+    </tr>
+
+    <tr>
+      <td rowspan="5">2. 材料数据库 / 物性库</td>
+      <td>Granta MI（Ansys）</td>
+      <td>英国</td>
+      <td>工程材料数据库标杆产品，广泛对接CAE工具</td>
+    </tr>
+    <tr>
+      <td>Total Materia</td>
+      <td>德国</td>
+      <td>全球数据最全，支持标准查询与性能比较</td>
+    </tr>
+    <tr>
+      <td>MatWeb</td>
+      <td>美国</td>
+      <td>免费数据平台，适合教学与初步选材</td>
+    </tr>
+    <tr>
+      <td>Matmatch</td>
+      <td>瑞士</td>
+      <td>用户友好，快速筛选，适合工程师选材</td>
+    </tr>
+    <tr>
+      <td>Thermo-Calc</td>
+      <td>瑞典</td>
+      <td>金属材料热力学模拟与相图计算权威</td>
+    </tr>
+
+    <tr>
+      <td rowspan="4">3. 科学计算平台</td>
+      <td>MATLAB</td>
+      <td>美国</td>
+      <td>功能全面，支持工程建模与数值分析</td>
+    </tr>
+    <tr>
+      <td>COMSOL Multiphysics</td>
+      <td>瑞典</td>
+      <td>强大的多物理场模拟工具，支持耦合分析</td>
+    </tr>
+    <tr>
+      <td>Maple</td>
+      <td>加拿大</td>
+      <td>符号计算强大，适合科研与教学使用</td>
+    </tr>
+    <tr>
+      <td>Mathcad</td>
+      <td>美国</td>
+      <td>文档型建模，适用于机械与电气工程</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">4. 数学建模平台</td>
+      <td>Simulink</td>
+      <td>美国</td>
+      <td>与MATLAB结合，适合系统建模与控制仿真</td>
+    </tr>
+    <tr>
+      <td>Modelica / Dymola</td>
+      <td>瑞典</td>
+      <td>适用于复杂系统的多领域建模，广泛用于能源/交通模拟</td>
+    </tr>
+    <tr>
+      <td>Mathematica</td>
+      <td>美国</td>
+      <td>高端符号与数值建模工具，适合理论推导</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">5. 化学模拟 / 分子建模</td>
+      <td>Gaussian</td>
+      <td>美国</td>
+      <td>量子化学模拟工具，广泛应用于材料与药物建模</td>
+    </tr>
+    <tr>
+      <td>Schrödinger</td>
+      <td>美国</td>
+      <td>药物发现与分子对接平台，功能强大</td>
+    </tr>
+    <tr>
+      <td>Materials Studio</td>
+      <td>英国</td>
+      <td>材料模拟平台，支持晶体、力场、DFT分析</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">6. 开源 / 国产替代工具</td>
+      <td>PyMOL</td>
+      <td>美国</td>
+      <td>分子可视化工具，免费开源，广泛用于结构生物学</td>
+    </tr>
+    <tr>
+      <td>VASP</td>
+      <td>奥地利</td>
+      <td>第一性原理计算权威，适用于材料模拟</td>
+    </tr>
+    <tr>
+      <td>SciDAVis</td>
+      <td>国际开源</td>
+      <td>科学数据分析与可视化工具，轻量易用</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

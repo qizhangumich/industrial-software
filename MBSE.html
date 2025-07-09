@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>MBSE 工具链梳理</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #003366;
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    th {
+      background-color: #e6f2f0;
+      color: #007a5a;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f4f6f8;
+    }
+
+    .note {
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>MBSE 工具链结构梳理 MBSE Toolchain</h2>
+
+    <h3>📌 需求管理工具 Requirements Management</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>工具</th>
+          <th>公司</th>
+          <th>国家/地区</th>
+          <th>说明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>DOORS</td><td>IBM</td><td>美国</td><td>老牌主流需求管理工具</td></tr>
+        <tr><td>Cradle</td><td>3SL</td><td>英国</td><td>集成建模 + RM</td></tr>
+        <tr><td>Caliber</td><td>Micro Focus</td><td>美国</td><td>原 Borland，协同功能强</td></tr>
+        <tr><td>Jama</td><td>Jama Software</td><td>美国</td><td>现代 SaaS 结构</td></tr>
+        <tr><td>Goda RE</td><td>Goda</td><td>中国</td><td>国产 MBSE 平台</td></tr>
+        <tr><td>Syswave</td><td>航天某所</td><td>中国</td><td>国防系统常用</td></tr>
+        <tr><td>ORM</td><td>欧软</td><td>中国</td><td>适配国产需求流程</td></tr>
+        <tr><td>Sys.RE</td><td>安创</td><td>中国</td><td>需求-设计一体化平台</td></tr>
+      </tbody>
+    </table>
+
+    <h3>📌 系统建模工具 Architecture Modeling</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>工具</th>
+          <th>公司</th>
+          <th>国家</th>
+          <th>说明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Rhapsody</td><td>IBM</td><td>美国</td><td>SysML/UML 建模，支持自动代码生成</td></tr>
+        <tr><td>MagicDraw</td><td>Dassault</td><td>美国/法国</td><td>原 No Magic，后被达索收购</td></tr>
+        <tr><td>EA</td><td>Sparx</td><td>澳大利亚</td><td>性价比高，支持 BPMN/UML/SysML</td></tr>
+        <tr><td>Capella</td><td>Thales</td><td>法国</td><td>基于 ARCADIA 方法论，开源</td></tr>
+        <tr><td>Papyrus</td><td>Eclipse</td><td>多国</td><td>开源 SysML/UML 建模框架</td></tr>
+        <tr><td>GENESYS</td><td>Vitech</td><td>美国</td><td>基于 OOSEM 方法</td></tr>
+      </tbody>
+    </table>
+
+    <h3>📌 多物理建模与仿真 Modelica & CAE Tools</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>工具</th>
+          <th>公司</th>
+          <th>国家</th>
+          <th>说明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Modelica</td><td>Modelica 协会</td><td>瑞典</td><td>开源物理建模语言</td></tr>
+        <tr><td>Dymola</td><td>Dassault</td><td>法国</td><td>Modelica 工具，达索收购</td></tr>
+        <tr><td>AMESim</td><td>Siemens</td><td>德国</td><td>原 Imagine.Lab，被西门子收购</td></tr>
+        <tr><td>Simulink</td><td>MathWorks</td><td>美国</td><td>MATLAB 平台下的图形建模</td></tr>
+        <tr><td>Claytex</td><td>Claytex</td><td>英国</td><td>专注 Modelica 与自动驾驶</td></tr>
+        <tr><td>Modelon</td><td>Modelon AB</td><td>瑞典</td><td>现代云平台 Modelon Impact</td></tr>
+        <tr><td>TLK Thermo</td><td>TLK GmbH</td><td>德国</td><td>热系统仿真专家</td></tr>
+        <tr><td>Simcenter</td><td>Siemens</td><td>德国</td><td>西门子多物理场平台</td></tr>
+        <tr><td>Simpack</td><td>Dassault</td><td>德国</td><td>机械系统动力学</td></tr>
+        <tr><td>VI-GRADE</td><td>VI-grade</td><td>意大利</td><td>虚拟驾驶仿真</td></tr>
+        <tr><td>RT-LAB</td><td>OPAL-RT</td><td>加拿大</td><td>实时仿真系统</td></tr>
+        <tr><td>dSPACE</td><td>dSPACE GmbH</td><td>德国</td><td>控制器硬件在环仿真</td></tr>
+        <tr><td>Speedgoat</td><td>Speedgoat GmbH</td><td>瑞士</td><td>Simulink 实时硬件支持</td></tr>
+      </tbody>
+    </table>
+
+    <h3>📌 优化平台与并购信息 Optimization Platforms & M&A</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>工具</th>
+          <th>公司</th>
+          <th>国家</th>
+          <th>并购信息</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Insight</td>
+          <td>Insight</td>
+          <td>美国</td>
+          <td class="note">与比利时 Optimus 类似，后被达索收购</td>
+        </tr>
+        <tr>
+          <td>Optimus</td>
+          <td>Noesis Solutions</td>
+          <td>比利时</td>
+          <td class="note">后被日本 Cybernet Systems 收购</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
