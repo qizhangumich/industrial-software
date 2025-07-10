@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visual Components 公司分析</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #0f172a;
+    }
+    .company-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid #7c3aed;
+    }
+    .company-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #7c3aed;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+    }
+    th {
+      background-color: #ede9fe;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Visual Components 公司介绍与中国市场替代分析</h1>
+
+  <div class="company-card">
+    <div class="company-title">Visual Components</div>
+
+    <div class="section-title">一、公司概况</div>
+    <p><strong>总部：</strong>芬兰赫尔辛基 ｜ <strong>成立：</strong>1999年</p>
+    <p><strong>核心产品：</strong>3DCreate、3DSimulate、3DRealize</p>
+    <p><strong>服务领域：</strong>工厂仿真建模、机器人仿真、物流自动化、虚拟调试</p>
+
+    <div class="section-title">二、核心竞争力</div>
+    <ul>
+      <li>强大的 3D 工厂建模能力，适配 2000+ 工业设备模型库</li>
+      <li>支持离散制造系统的全流程验证与虚拟调试</li>
+      <li>可嵌入机器人路径规划、PLC 仿真等功能</li>
+      <li>与 ABB、KUKA、FANUC、Yaskawa 等广泛合作</li>
+    </ul>
+
+    <div class="section-title">三、中国市场与替代方案</div>
+    <p>进入中国市场多年，被广泛用于离散制造的产线预验证与机器人调试；主要面向系统集成商和高校工程仿真教学。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>替代公司</th>
+          <th>产品名称</th>
+          <th>所在城市</th>
+          <th>主要优势</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>极数科技</td>
+          <td>DigitalTwin3D</td>
+          <td>深圳</td>
+          <td>视觉引擎先进，支持AR/VR设备联动</td>
+        </tr>
+        <tr>
+          <td>灵汐科技</td>
+          <td>灵汐工业仿真平台</td>
+          <td>上海</td>
+          <td>与国产PLC兼容良好，工业模型库本地化</td>
+        </tr>
+        <tr>
+          <td>工大科雅</td>
+          <td>FlexDTS</td>
+          <td>北京</td>
+          <td>聚焦数字孪生制造场景，高校与航天背景</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
