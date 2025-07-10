@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>gPROMS 公司分析</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #0f172a;
+    }
+    .company-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid #059669;
+    }
+    .company-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #059669;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+    }
+    th {
+      background-color: #d1fae5;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>gPROMS 公司介绍与中国市场替代分析</h1>
+
+  <div class="company-card">
+    <div class="company-title">gPROMS（Process Systems Enterprise）</div>
+
+    <div class="section-title">一、公司概况</div>
+    <p><strong>总部：</strong>英国伦敦 ｜ <strong>归属：</strong>Siemens（2022年收购）</p>
+    <p><strong>核心产品：</strong>gPROMS Process、gPROMS FormulatedProducts、Digital Applications Suite</p>
+    <p><strong>服务领域：</strong>高级流程建模、多尺度建模、反应工程、药品与新材料工艺</p>
+
+    <div class="section-title">二、核心竞争力</div>
+    <ul>
+      <li>支持高阶微分代数方程（DAE）建模，适用于复杂动力学系统</li>
+      <li>专注于第一性原理建模，兼容 AI 与机理模型融合</li>
+      <li>广泛应用于制药、催化反应、能源过程、燃料电池、新材料</li>
+      <li>与 Siemens Digital Twin 工具链打通，用于研发与仿真联动</li>
+    </ul>
+
+    <div class="section-title">三、中国市场与替代方案</div>
+    <p>被顶尖高校和研究机构采用，如清华大学、中科院化学所，但在企业中普及度不高；本地替代研发尚处早期。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>替代公司</th>
+          <th>产品名称</th>
+          <th>所在城市</th>
+          <th>主要优势</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>华南理工大学</td>
+          <td>Simulis-CN</td>
+          <td>广州</td>
+          <td>具备部分热力学方程建模与反应建模能力</td>
+        </tr>
+        <tr>
+          <td>中科院过程所</td>
+          <td>iPS建模系统</td>
+          <td>北京</td>
+          <td>适用于连续流反应器与新能源过程建模</td>
+        </tr>
+        <tr>
+          <td>自研方向</td>
+          <td>Python+DAE Solver</td>
+          <td>高校/研究机构</td>
+          <td>使用 Modelica/Pyomo/Dymola 等实现特定功能</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
